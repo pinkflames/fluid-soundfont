@@ -22,6 +22,7 @@ while investigating Debian packaging - we shoehorn the data into FLAC:
 ## How to undo the FLACy weirdness
 All one needs to undo it is to decompress it with the flac tool, taking care to
 force use of raw output (since the original data wasn't uncompressed audio):
+
 `flac --force-raw-format --endian=little --sign=signed -d FluidR3_GM.sf2.flacy -o FluidR3_GM.sf2`
 
 ## SHA-512 checksums
